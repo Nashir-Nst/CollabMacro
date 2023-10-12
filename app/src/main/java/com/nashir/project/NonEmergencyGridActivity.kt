@@ -1,0 +1,11 @@
+package com.nashir.project
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class NonEmergencyGridActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_non_emergency_grid)
+    }
+}
