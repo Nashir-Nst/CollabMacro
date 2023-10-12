@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="588dp"
+        android:layout_marginBottom="608dp"
         android:src="@drawable/img_5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,10 +23,11 @@
         android:backgroundTint="@color/red"
         android:src="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="8dp">
+
     </ImageButton>
 
     <ImageButton
@@ -39,17 +40,58 @@
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="8dp">
+
     </ImageButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_9">
+                        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_12">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/pcr"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginBottom="44dp"
         app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toStartOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="124dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
@@ -64,16 +106,18 @@
         android:id="@+id/cardView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="44dp"
         app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="124dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/img_7">
+
         </ImageView>
 
     </androidx.cardview.widget.CardView>
@@ -82,90 +126,38 @@
         android:id="@+id/cardView2"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="56dp"
         app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView5"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="340dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/img_10">
+
         </ImageView>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/cardView4"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_margin="10dp"
+        android:layout_marginBottom="24dp"
         app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardView5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="340dp"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_9">
-        </ImageView>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="36dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="340dp"
-        tools:ignore="DuplicateIds,MissingConstraints">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_10">
-        </ImageView>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="10dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/cardView2"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="524dp"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/img_11">
-        </ImageView>
 
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="36dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="524dp"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_12">
         </ImageView>
 
     </androidx.cardview.widget.CardView>

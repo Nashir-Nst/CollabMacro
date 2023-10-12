@@ -7,11 +7,10 @@
     tools:context=".NonEmergencyActivity">
 
 
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="588dp"
+        android:layout_marginBottom="608dp"
         android:src="@drawable/img_5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,28 +19,30 @@
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_width="56dp"
-        android:layout_height="54dp"
+        android:layout_width="76dp"
+        android:layout_height="70dp"
         android:backgroundTint="@color/red"
         android:src="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="-5dp">
+
     </ImageButton>
 
     <ImageButton
         android:id="@+id/grid"
-        android:layout_width="63dp"
+        android:layout_width="74dp"
         android:layout_height="62dp"
         android:backgroundTint="@color/red"
         android:src="@drawable/grid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="3dp">
+
     </ImageButton>
 
 

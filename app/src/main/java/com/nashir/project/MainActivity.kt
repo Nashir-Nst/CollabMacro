@@ -26,6 +26,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
 
-//        TODO("Not yet implemented")
     }
 }

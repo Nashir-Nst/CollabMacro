@@ -15,7 +15,7 @@ class MenuActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val btnnonemergency : Button = findViewById(R.id.btnnonemergency)
+        val btnnonemergency : ImageButton = findViewById(R.id.btnnonemergency)
         btnnonemergency.setOnClickListener(this)
     }
 
@@ -28,6 +28,6 @@ class MenuActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
         }
-//        TODO("Not yet implemented")
+
     }
 }

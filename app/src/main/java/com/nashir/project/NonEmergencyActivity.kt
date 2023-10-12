@@ -15,32 +15,28 @@ class NonEmergencyActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_non_emergency)
 
+        val exit : ImageButton = findViewById(R.id.back)
         val gird : ImageButton = findViewById(R.id.grid)
         gird.setOnClickListener(this)
-
-        val exit : ImageButton = findViewById(R.id.back)
         exit.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
-        if (v != null) {
-            when(v.id) {
-                R.id.grid -> {
-                    val intent = Intent(this@NonEmergencyActivity, CardActivity::class.java)
-                    startActivity(intent)
-                }
-            }
-        }
+            when (v?.id) {
 
-        if (v != null) {
-            when(v.id) {
                 R.id.back -> {
-                    val intent = Intent(this@NonEmergencyActivity, MenuActivity::class.java)
-                    startActivity(intent)
+                    val backintent = Intent(this@NonEmergencyActivity, MenuActivity::class.java)
+                    startActivity(backintent)
                 }
-            }
+                R.id.grid-> {
+                    val girdintent = Intent(this@NonEmergencyActivity, CardActivity::class.java)
+                    startActivity(girdintent)
         }
 
-        TODO("Not yet implemented")
+            }
+
+
     }
 }
+
+

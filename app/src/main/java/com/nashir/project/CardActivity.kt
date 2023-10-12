@@ -23,24 +23,19 @@ class CardActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
 
-        if (v != null) {
-            when(v.id) {
-                R.id.back1 -> {
-                    val intent = Intent(this@CardActivity, NonEmergencyActivity::class.java)
-                    startActivity(intent)
-                }
+        when (v?.id) {
+
+            R.id.back1 -> {
+                val backintent = Intent(this@CardActivity, NonEmergencyActivity::class.java)
+                startActivity(backintent)
             }
+            R.id.list-> {
+                val listintent = Intent(this@CardActivity, NonEmergencyActivity::class.java)
+                startActivity(listintent)
+            }
+
         }
 
-        if (v != null) {
-            when(v.id) {
-                R.id.list -> {
-                    val intent = Intent(this@CardActivity, NonEmergencyActivity::class.java)
-                    startActivity(intent)
-                }
-            }
-        }
 
-        TODO("Not yet implemented")
     }
 }
