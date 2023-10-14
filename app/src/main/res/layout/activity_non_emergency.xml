@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".NonEmergencyListActivity"
+    android:background="@color/cream">
+
+    <ImageView
+        android:id="@+id/nEmergency_image1"
+        android:layout_width="393dp"
+        android:layout_height="118dp"
+        android:background="@drawable/shape_buttonup"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/back_image2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/nEmergency_image1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <ImageView
+        android:id="@+id/search_image3"
+        android:layout_width="255dp"
+        android:layout_height="34dp"
+        android:src="@drawable/rectangle_search"
+        app:layout_constraintBottom_toBottomOf="@+id/nEmergency_image1"
+        app:layout_constraintEnd_toEndOf="@+id/nEmergency_image1"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toEndOf="@+id/back_image2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/search_symbol"
+        app:layout_constraintBottom_toBottomOf="@+id/search_image3"
+        app:layout_constraintEnd_toEndOf="@+id/search_image3"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="@+id/search_image3"
+        app:layout_constraintTop_toTopOf="@+id/search_image3"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <ImageView
+        android:id="@+id/tgrid_image4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/grid"
+        app:layout_constraintBottom_toBottomOf="@+id/nEmergency_image1"
+        app:layout_constraintEnd_toEndOf="@+id/nEmergency_image1"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/search_image3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+
+     <include
+        layout="@layout/list_p3k"
+        android:layout_width="391dp"
+        android:layout_height="699dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nEmergency_image1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
