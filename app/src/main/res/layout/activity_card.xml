@@ -1,168 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CardActivity">
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="608dp"
-        android:src="@drawable/img_5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/back1"
-        android:layout_width="56dp"
-        android:layout_height="54dp"
-        android:backgroundTint="@color/red"
-        android:src="@drawable/back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="8dp">
-
-    </ImageButton>
-
-    <ImageButton
-        android:id="@+id/list"
-        android:layout_width="63dp"
-        android:layout_height="62dp"
-        android:backgroundTint="@color/red"
-        android:src="@drawable/list"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="8dp">
-
-    </ImageButton>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="60dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView4"
-        app:layout_constraintEnd_toStartOf="@+id/cardView2"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/img_9">
-                        </ImageView>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView5"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="24dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CardActivity">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_12">
+            android:src="@drawable/img_5"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-120dp"
+            tools:ignore="MissingConstraints" />
 
-        </ImageView>
+        <ImageButton
+            android:id="@+id/back1"
+            android:layout_width="56dp"
+            android:layout_height="54dp"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteY="8dp">
 
-    </androidx.cardview.widget.CardView>
+        </ImageButton>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/pcr"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="44dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
-        app:layout_constraintEnd_toStartOf="@+id/cardView"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        <ImageButton
+            android:id="@+id/list"
+            android:layout_width="63dp"
+            android:layout_height="62dp"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteY="8dp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_8">
-        </ImageView>
+        </ImageButton>
 
-    </androidx.cardview.widget.CardView>
+        <include
+            layout="@layout/card_layout"
+            android:layout_width="381dp"
+            android:layout_height="567dp"
+            android:layout_marginHorizontal="16dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="153dp" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="44dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_7">
-
-        </ImageView>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="56dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_10">
-
-        </ImageView>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="24dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cardView5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_11">
-
-        </ImageView>
-
-    </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--backup card-->
+<!--<androidx.cardview.widget.CardView-->
+<!--android:id="@+id/cardView2"-->
+<!--android:layout_width="150dp"-->
+<!--android:layout_height="150dp"-->
+<!--android:layout_marginEnd="20dp"-->
+<!--app:cardCornerRadius="15dp"-->
+<!--app:layout_constraintBottom_toTopOf="@+id/cardView5"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintHorizontal_bias="0.5"-->
+<!--app:layout_constraintStart_toEndOf="@+id/cardView3"-->
+<!--app:layout_constraintTop_toTopOf="@+id/cardView3"-->
+<!--app:layout_constraintVertical_bias="0.062"-->
+<!--tools:ignore="MissingConstraints">-->
+
+<!--<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/img_10">-->
+
+<!--</ImageView>-->
+
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--android:id="@+id/cardView"-->
+<!--android:layout_width="150dp"-->
+<!--android:layout_height="150dp"-->
+<!--android:layout_marginEnd="20dp"-->
+<!--app:cardCornerRadius="15dp"-->
+<!--app:layout_constraintBottom_toTopOf="@+id/cardView2"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintHorizontal_bias="0.5"-->
+<!--app:layout_constraintStart_toEndOf="@+id/pcr"-->
+<!--app:layout_constraintTop_toTopOf="@+id/pcr"-->
+<!--app:layout_constraintVertical_bias="0.0"-->
+<!--tools:ignore="MissingConstraints">-->
+
+<!--<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/img_7">-->
+
+<!--</ImageView>-->
+
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--android:id="@+id/pcr"-->
+<!--android:layout_width="150dp"-->
+<!--android:layout_height="150dp"-->
+<!--android:layout_marginBottom="40dp"-->
+<!--android:layout_marginStart="20dp"-->
+<!--app:cardCornerRadius="15dp"-->
+<!--app:layout_constraintBottom_toTopOf="@+id/cardView3"-->
+<!--app:layout_constraintEnd_toStartOf="@+id/cardView"-->
+<!--app:layout_constraintHorizontal_bias="0.5"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--tools:ignore="MissingConstraints">-->
+
+<!--<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/img_8">-->
+<!--</ImageView>-->
+
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--android:id="@+id/cardView5"-->
+<!--android:layout_width="150dp"-->
+<!--android:layout_height="150dp"-->
+<!--android:layout_marginEnd="20dp"-->
+<!--app:cardCornerRadius="15dp"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintHorizontal_bias="0.5"-->
+<!--app:layout_constraintStart_toEndOf="@+id/cardView4"-->
+<!--app:layout_constraintTop_toTopOf="@+id/cardView4"-->
+<!--tools:ignore="MissingConstraints">-->
+
+<!--<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/img_12">-->
+
+<!--</ImageView>-->
+
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--android:id="@+id/cardView3"-->
+<!--android:layout_width="150dp"-->
+<!--android:layout_height="150dp"-->
+<!--android:layout_marginBottom="40dp"-->
+<!--android:layout_marginStart="20dp"-->
+<!--app:cardCornerRadius="15dp"-->
+<!--app:layout_constraintBottom_toTopOf="@+id/cardView4"-->
+<!--app:layout_constraintEnd_toStartOf="@+id/cardView2"-->
+<!--app:layout_constraintHorizontal_bias="0.5"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--tools:ignore="MissingConstraints">-->
+
+<!--<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/img_9">-->
+
+<!--</ImageView>-->
+
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--android:id="@+id/cardView4"-->
+<!--android:layout_width="150dp"-->
+<!--android:layout_height="150dp"-->
+<!--android:layout_marginStart="20dp"-->
+<!--android:layout_marginBottom="40dp"-->
+<!--app:cardCornerRadius="15dp"-->
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--app:layout_constraintEnd_toStartOf="@+id/cardView2"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--tools:ignore="MissingConstraints">-->
+
+<!--<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/img_11">-->
+
+<!--</ImageView>-->
+
+<!--</androidx.cardview.widget.CardView>-->
 
 

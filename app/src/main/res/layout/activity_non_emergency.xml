@@ -35,11 +35,10 @@
         android:id="@+id/grid"
         android:layout_width="74dp"
         android:layout_height="62dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="@color/red"
         android:src="@drawable/grid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
-        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
         tools:layout_editor_absoluteY="3dp">
 

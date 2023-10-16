@@ -14,7 +14,7 @@ class CardActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_card)
 
-        val exit : Button = findViewById(R.id.back1)
+        val exit : ImageButton = findViewById(R.id.back1)
         exit.setOnClickListener(this)
 
         val urutan : ImageButton = findViewById(R.id.list)
