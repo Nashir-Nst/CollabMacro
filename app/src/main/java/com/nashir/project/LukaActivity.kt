@@ -31,7 +31,7 @@ class LukaActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
 
             R.id.back9 -> {
-                val backintent = Intent(this@LukaActivity, CardActivity::class.java)
+                val backintent = Intent(this@LukaActivity, NonEmergencyActivity::class.java)
                 startActivity(backintent)
             }
         }

@@ -31,7 +31,7 @@ class SakitKepalaActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
 
             R.id.back7 -> {
-                val backintent = Intent(this@SakitKepalaActivity, CardActivity::class.java)
+                val backintent = Intent(this@SakitKepalaActivity, NonEmergencyActivity::class.java)
                 startActivity(backintent)
             }
         }

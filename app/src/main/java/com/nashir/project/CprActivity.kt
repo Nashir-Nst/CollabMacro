@@ -31,7 +31,7 @@ class CprActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
 
             R.id.back3 -> {
-                val backintent = Intent(this@CprActivity, CardActivity::class.java)
+                val backintent = Intent(this@CprActivity, NonEmergencyActivity::class.java)
                 startActivity(backintent)
             }
         }

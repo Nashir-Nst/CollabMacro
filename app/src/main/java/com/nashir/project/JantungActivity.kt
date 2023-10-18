@@ -33,7 +33,7 @@ class JantungActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
 
             R.id.back5 -> {
-                val backintent = Intent(this@JantungActivity, CardActivity::class.java)
+                val backintent = Intent(this@JantungActivity, NonEmergencyActivity::class.java)
                 startActivity(backintent)
             }
         }

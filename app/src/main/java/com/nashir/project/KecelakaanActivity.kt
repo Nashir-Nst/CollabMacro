@@ -33,7 +33,7 @@ class KecelakaanActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
 
             R.id.back4 -> {
-                val backintent = Intent(this@KecelakaanActivity, CardActivity::class.java)
+                val backintent = Intent(this@KecelakaanActivity, NonEmergencyActivity::class.java)
                 startActivity(backintent)
             }
         }

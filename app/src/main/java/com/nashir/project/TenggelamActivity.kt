@@ -33,7 +33,7 @@ class TenggelamActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
 
             R.id.back6 -> {
-                val backintent = Intent(this@TenggelamActivity, CardActivity::class.java)
+                val backintent = Intent(this@TenggelamActivity, NonEmergencyActivity::class.java)
                 startActivity(backintent)
             }
         }

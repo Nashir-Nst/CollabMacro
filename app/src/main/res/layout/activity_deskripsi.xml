@@ -71,12 +71,11 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:layout_width="556dp"
-        android:layout_height="476dp"
+        android:layout_width="633dp"
+        android:layout_height="527dp"
         android:layout_marginTop="24dp"
         android:src="@drawable/img_15"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewasma"></ImageView>
 
@@ -85,21 +84,21 @@
         android:id="@+id/textView"
         android:layout_width="315dp"
         android:layout_height="51dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:text="Cara Penanganan Asma"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardViewasma"
         tools:ignore="MissingConstraints,NotSibling" />
 
     <ImageView
-        android:layout_width="268dp"
-        android:layout_height="310dp"
+        android:layout_width="340dp"
+        android:layout_height="359dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/img_16"
         app:layout_constraintEnd_toEndOf="parent"

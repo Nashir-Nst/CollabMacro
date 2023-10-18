@@ -34,8 +34,8 @@ class DeskripsiActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
 
             R.id.back2 -> {
-                val backintent = Intent(this@DeskripsiActivity, CardActivity::class.java)
-                startActivity(backintent)
+                val backintent = finish()
+                backintent
             }
         }
     }

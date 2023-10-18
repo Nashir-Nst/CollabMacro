@@ -29,7 +29,7 @@ class PendarahanActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
 
             R.id.back8 -> {
-                val backintent = Intent(this@PendarahanActivity, CardActivity::class.java)
+                val backintent = Intent(this@PendarahanActivity, NonEmergencyActivity::class.java)
                 startActivity(backintent)
             }
         }
