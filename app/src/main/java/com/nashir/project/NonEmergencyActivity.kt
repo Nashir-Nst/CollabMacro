@@ -4,22 +4,35 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toolbar
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.widget.ButtonBarLayout
 
 class NonEmergencyActivity : AppCompatActivity(), View.OnClickListener {
     @SuppressLint("WrongViewCast", "MissingInflatedId")
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_non_emergency)
+
+
 
         val exit : ImageButton = findViewById(R.id.back)
         val gird : ImageButton = findViewById(R.id.grid)
         gird.setOnClickListener(this)
         exit.setOnClickListener(this)
     }
+
+    private fun setSupportActionBar(toolbar: Toolbar) {
+        val toolbar : Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+    }
+
 
     override fun onClick(v: View?) {
             when (v?.id) {

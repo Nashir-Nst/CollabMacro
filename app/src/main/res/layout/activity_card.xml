@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/cream">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".CardActivity">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_5"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-120dp"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
@@ -25,18 +29,18 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             android:layout_height="54dp"
             android:backgroundTint="@color/red"
             android:src="@drawable/back"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintEnd_toStartOf="@+id/list"
+            app:layout_constraintHorizontal_bias="0.061"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-            tools:layout_editor_absoluteY="8dp">
+            tools:layout_editor_absoluteY="7dp">
 
         </ImageButton>
 
         <ImageButton
             android:id="@+id/list"
-            android:layout_width="63dp"
-            android:layout_height="62dp"
+            android:layout_width="64dp"
+            android:layout_height="53dp"
             android:backgroundTint="@color/red"
             android:src="@drawable/list"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,12 +52,20 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         </ImageButton>
 
         <include
+            android:id="@+id/include"
             layout="@layout/card_layout"
-            android:layout_width="381dp"
-            android:layout_height="567dp"
-            android:layout_marginHorizontal="16dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="153dp" />
+            android:layout_width="378dp"
+            android:layout_height="735dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_goneMarginStart="20dp">
+
+        </include>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
